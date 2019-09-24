@@ -6,8 +6,7 @@ function shoppingList() {
       
       const listItem = $('.js-shopping-list-entry').val();
       
-      
-     if (listItem !== "") {
+      if (listItem !== "") {
         $('.shopping-list').append(`<li>
           <span class="shopping-item">${listItem}</span>
           <div class="shopping-item-controls">
@@ -18,11 +17,10 @@ function shoppingList() {
               <span class="button-label">delete</span>
             </button>
           </div>
-        </li>
-        <li>`);
+        </li>`);
         $('.js-shopping-list-entry').val("");
-    }
-  });
+    };
+
   
   
   $('.shopping-list').on('click', '.shopping-item-toggle', function(event) {
